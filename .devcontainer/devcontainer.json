@@ -1,0 +1,16 @@
+{
+    "name": "Laravel Sail",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "laravel.test",
+    "workspaceFolder": "/var/www/html",
+    "postCreateCommand": "composer install && php artisan key:generate",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "onecentlin.laravel-blade",
+                "xdebug.php-debug",
+                "bmewburn.vscode-intelephense-client"
+            ]
+        }
+    }
+}
